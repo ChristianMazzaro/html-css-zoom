@@ -1,0 +1,140 @@
+/*
+
+RESET
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+
+GENERAL
+
+*/
+
+
+.camera{
+    width: calc(100% / 7);
+}
+
+
+
+body{
+     background-color: black;
+}
+
+
+
+main{
+    height: calc(100vh - 100px);
+   
+}
+
+
+
+footer{
+    height: 100px;
+}
+
+
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+
+.my-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.col-1-6{
+    width: calc(100% / 6);
+}
+
+
+.col-2-3{
+    width: calc((100% / 3)*2);
+}
+
+
+
+/*
+
+MAIN
+*/
+
+
+
+
+/*
+
+FOOTER
+
+*/
+
+
+
+
+
+footer .footer-container .menu > *{
+    padding: 10px;
+    color: white;
+    background-color: purple;
+}
+
+
+footer .footer-container .menu .logo{
+    text-align: center;
+}
+
+
+footer .footer-container .menu .account{
+    text-align: left;
+}
+
+
+footer .footer-container .menu .main-nav{
+    text-align: right;
+}
+
+
+
+
+
+/*
+
+DEBUG
+
+*/
+
+.debug main .container .my-row .camera{
+    background-color: orangered;
+    outline: 2px dashed black;
+    height: 200px;
+    
+}
+
+.debug main .container{
+    background-color: green;
+     outline: 2px dashed black;
+}
+
+.debug footer .menu{
+    background-color: yellow;
+}
+
+.debug footer .menu > *{
+    outline: 2px dashed black;
+}
+
+
