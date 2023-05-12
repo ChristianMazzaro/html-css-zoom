@@ -25,20 +25,20 @@ body{
 
 
 main{
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
    
 }
 
 
 
 footer{
-    height: 200px;
+    margin-top: 0%;
+    height: 100px;
 }
 
 
 
 .container{
-    height: calc(100vh - 200px);
     width: 100%;
     margin: 0 auto;
     padding: 0 1%;
@@ -60,8 +60,6 @@ footer{
     position: relative;
 }
 
-
-
 .my-row-footer{
     display: flex;
     flex-wrap: wrap;
@@ -78,6 +76,11 @@ footer{
 }
 
 
+.exit{
+    position: relative;
+
+}
+
 
 /*
 
@@ -85,6 +88,29 @@ MAIN
 */
 
 
+main .head-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+    gap: 2px;
+}
+
+main .container .head-menu > div{
+    background-color:rgba(189, 195, 199, 0.5);
+    padding: 0.2%;
+    border-radius: 5px;
+    color: white;
+}
+   
+
+main .container .my-row-main .camera .name   {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    color: white;
+    background-color:rgba(189, 195, 199, 0.5);  
+    padding: 1%;
+}
 
 
 /*
@@ -98,28 +124,55 @@ FOOTER
 
 
 footer .footer-container .menu > *{
-    padding: 2%;
+    padding: 1%;
     color: white;
-    background-color: purple;
+    background-color: rgb(52, 52, 52);
 }
 
 
-footer .footer-container .menu .logo{
+footer .footer-container .menu .tools{
     text-align: center;
 }
 
 
-footer .footer-container .menu .account{
-    text-align: left;
+footer .footer-container .my-row-footer .col-1-6 > div{
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+footer .footer-container .my-row-footer .col-1-6 div > i{
+    font-size: 2em;
+    color: white;
+}
+
+footer .footer-container .my-row-footer .col-2-3 > div{
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.footer-container .my-row-footer .col-2-3 div > i{
+    font-size: 2em;
+    color: white;
+}
+
+footer .footer-container .my-row-footer .col-1-6 .end-button{
+    background-color: grey;
+    padding: 8%  35%;
+    text-align: center;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
 }
 
 
-footer .footer-container .menu .main-nav{
-    text-align: right;
+footer .footer-container .my-row-footer .col-2-3 .active{
+    color: greenyellow;
 }
-
-
-
 
 
 /*
@@ -128,27 +181,27 @@ DEBUG
 
 */
 
-.debug main .container .my-row-main .camera{
+debug main .container .my-row-main .camera{
     background-color: orangered;
     outline: 2px dashed black;
     height: 150px;
     
 }
 
-.debug main .container{
+debug main .container{
     background-color: green;
      outline: 2px dashed black;
 }
 
-.debug footer .menu{
+debug footer .menu{
     background-color: yellow;
 }
 
-.debug footer .menu > *{
+debug footer .menu > *{
     outline: 2px dashed black;
 }
 
-.debug main .head-menu {
+debug main .head-menu {
  display: flex;
  justify-content: flex-end;
  outline: 2px dashed white;
@@ -156,16 +209,50 @@ DEBUG
 }
 
 
-.debug main .head-menu div {
+debug main .head-menu div {
     color: white;
     outline: 2px dashed white;
 }
 
-.debug main .container .my-row-main .camera .name   {
+debug main .container .my-row-main .camera .name   {
     position: absolute;
     bottom: 0;
     left: 0;
     color: white;
     background-color:rgba(189, 195, 199, 0.5);  
     padding: 1%;
+}
+
+debug main .container .head-menu > div{
+    background-color:rgba(189, 195, 199, 0.5);
+    padding: 0.2%;
+    border-radius: 5px;
+}
+
+debug footer .footer-container .my-row-footer .col-2-3 > div{
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+debug footer .footer-container .my-row-footer .col-2-3 div > i{
+    font-size: 2em;
+    color: white;
+}
+
+debug footer .footer-container .my-row-footer .col-1-6 .end-button{
+    background-color: grey;
+    padding: 8%  35%;
+    text-align: center;
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+}
+
+debug .exit{
+    position: relative;
+
 }
