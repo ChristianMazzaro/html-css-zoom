@@ -19,7 +19,8 @@ GENERAL
 
 
 .camera{
-    width: calc(100% / 7);
+    width: calc(100% / 8);
+    margin: 0.4% 0.2%;
 }
 
 
@@ -46,12 +47,20 @@ footer{
 .container{
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 5%;
+    padding: 0 1%;
 }
 
 
+.my-row-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
 
-.my-row{
+
+.my-row-footer{
     display: flex;
     flex-wrap: wrap;
 }
@@ -87,7 +96,7 @@ FOOTER
 
 
 footer .footer-container .menu > *{
-    padding: 10px;
+    padding: 2%;
     color: white;
     background-color: purple;
 }
@@ -117,10 +126,10 @@ DEBUG
 
 */
 
-.debug main .container .my-row .camera{
+.debug main .container .my-row-main .camera{
     background-color: orangered;
     outline: 2px dashed black;
-    height: 200px;
+    height: 150px;
     
 }
 
@@ -136,5 +145,4 @@ DEBUG
 .debug footer .menu > *{
     outline: 2px dashed black;
 }
-
 
