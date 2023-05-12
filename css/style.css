@@ -18,13 +18,6 @@ GENERAL
 */
 
 
-.camera{
-    width: calc(100% / 8);
-    margin: 0.4% 0.2%;
-}
-
-
-
 body{
      background-color: black;
 }
@@ -32,22 +25,22 @@ body{
 
 
 main{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 200px);
    
 }
 
 
 
 footer{
-    height: 100px;
+    height: 200px;
 }
 
 
 
 .container{
+    height: calc(100vh - 200px);
     width: 100%;
     margin: 0 auto;
-    margin-top: 5%;
     padding: 0 1%;
 }
 
@@ -58,6 +51,15 @@ footer{
     justify-content: center;
     
 }
+
+
+
+.camera{
+    width: calc(100% / 8);
+    margin: 0.4% 0.2%;
+    position: relative;
+}
+
 
 
 .my-row-footer{
@@ -146,3 +148,24 @@ DEBUG
     outline: 2px dashed black;
 }
 
+.debug main .head-menu {
+ display: flex;
+ justify-content: flex-end;
+ outline: 2px dashed white;
+ margin-bottom: 2%;
+}
+
+
+.debug main .head-menu div {
+    color: white;
+    outline: 2px dashed white;
+}
+
+.debug main .container .my-row-main .camera .name   {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color:rgba(189, 195, 199, 0.5);  
+    padding: 1%;
+}
